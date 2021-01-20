@@ -1,25 +1,37 @@
 
   p {
     color: white;
-  }
+   }
   body {
     font-family: 'Montserrat', sans-serif;
     background-color: rgba(111, 173, 122, 1);
-  }
+   }
+ header:hover {
+  font-size: 2em;
+   }
+ header {
+  transition-property: font-size;
+  transition-duration: 4s;
+  transition-timing-function: ease-out;
+  transition-delay: 2s;
+   }
   h1 {
     color: rgb(1, 90, 1);
     border: 1px solid rgb(1, 90, 1);
     margin: 45px;
     padding: 30px;
     float: left;
-  }
+    }
+  h1:hover {
+    border: 6px solid darkslategray;
+    }
   .flex-container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-  }
+    }
   .picholder {
       border: 1px solid rgb(1, 90, 1);
       margin: 15px;
@@ -29,17 +41,21 @@
     color: rgb(1, 90, 1);
     margin: 45px;
     padding: 5px
-  }
+    }
   h3 {
     color: rgb(1, 90, 1);
-  }
+    }
   .learn-list-box {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-  }
+    }
+  aside:hover {
+      border: 6px solid darkslategray;
+    }
+  aside ul li:nth-child(odd) { color: darkslategray; }
   ul {
     list-style-type: none;
     color: white;
@@ -48,24 +64,25 @@
     margin: 45px;
     padding: 5px;
     border-color: rgb(1, 90, 1);
-  }
+    }
   .white-text {
       color: white;
     }
   .green-text {
     color: rgb(1, 90, 1);
-  }
+   }
   .important:hover {
       background-color: white;
     }
   a[href="hs-projects.html"] {
     color: rgb(1, 90, 1);
     padding: 1rem;
-  }
+    }
   .fa-instagram {
       font-weight: bold;
       font-size: 200%;
-  }
+      color: darkslategray;
+    }
   a[href="https://www.cmcintoshphoto.com/"] {
       color: rgb(1, 90, 1);
       padding: 1rem;
