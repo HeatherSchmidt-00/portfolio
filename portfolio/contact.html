@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Web Forms</title>
+    <link rel="stylesheet" type="text/css" href="styles/contact-styles.css">
+  </head>
+
+  <body>
+    <header>
+      <h1>Tell me about yourself!</h1>
+    </header>
+    <img class="picholder" src="images/Portrait.jpg" width="425" alt="picture of woman with short gray hair, a large scarf, and hoop earrings drinking from an aluminum mug in the forest">
+
+    <form method="GET">
+      <label>Your Name:
+        <input type="text" name="applicantName">
+      </label>
+
+      <label>Your Email:
+        <input type="email" name="applicantEmail">
+      </label>
+
+      <label for="city">What city are you in?</label>
+      <input id="city" type="text" name="applicantCity">
+
+      <label>If classes or workshops were offered, what would most interest you?
+        <textarea name="applicantReason" rows="4" cols="50"></textarea>
+      </label>
+
+    <fieldset class="checkbox">
+      <legend>What types of outdoor activities are you interested in?
+      </legend>
+      <label>Trail Running
+        <input type="checkbox" name="type" value="trail">
+        <span class="checkmark"></span>
+      </label>
+      <label>Bikepacking
+        <input type="checkbox" name="type" value="bikepacking">
+        <span class="checkmark"></span>
+      </label>
+      <label>Camping
+        <input type="checkbox" name="type" value="camping">
+        <span class="checkmark"></span>
+      </label>
+      <label>Climbing
+        <input type="checkbox" name="type" value="climbing">
+        <span class="checkmark"></span>
+      </label>
+      <label>Hiking
+        <input type="checkbox" name="type" value="hiking">
+        <span class="checkmark"></span>
+      </label>
+      <label>All of the above!
+        <input type="checkbox" name="type" value="all">
+        <span class="checkmark"></span>
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Are you interested in leading outdoor adventure clinics?</legend>
+
+      <label>
+        <input type="radio" name="special" value="yes">
+        Yes
+      </label>
+      <label>
+        <input type="radio" name="special" value="no">
+        No
+      </label>
+    </fieldset>
+
+    <label>What kind of class or workshop would you most likely participate in?
+      <select name="classes">
+        <option value="">Please select</option>
+        <option value="short">2 hour group workshop</option>
+        <option value="day">Full day adventure class</option>
+        <option value="overnight">Overnight camping adventure</option>
+      </select>
+    </label>
+
+    <label>Anything else that's on your mind?
+      <textarea name="applicantReason" rows="4" cols="50"></textarea>
+    </label>
+
+      <label>To create an account, enter a password
+        <input type="password" name="accountPW">
+      </label>
+
+
+      <input type="submit" value="Send!">
+
+    </form>
+
+  </body>
+</html>
